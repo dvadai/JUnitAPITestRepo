@@ -20,7 +20,14 @@ WebDriver driver = new FirefoxDriver();
 11. Close/quit driver: driver.close();
 12. A new test will have a different @Test annotation
 
-# Advanced
+# Additional improvements
 1. Use the @Before annotation on a method to initialise your driver
+
+# API testing framework
+1. Add the dependency. Find it here: https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+2. Make sure you have the proper imports
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
 
 
