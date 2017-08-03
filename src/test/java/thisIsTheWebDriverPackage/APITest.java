@@ -9,7 +9,6 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-//https://jsonplaceholder.typicode.com/posts
 
 public class APITest {
 
@@ -29,5 +28,13 @@ public class APITest {
         Assert.assertEquals(response.statusCode() , 200);
 //        Assert.assertTrue(response.statusCode() == 200);
 //        System.out.println(response.getBody().prettyPrint());
+
+
+        given().baseUri("http://pokeapi.co/api/v2/berry").headers(headers).
+                when().get("/aa").
+                then().assertThat().statusCode(404);
+
+
+
     }
 }

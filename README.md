@@ -12,7 +12,7 @@ into your POM file from https://github.com/junit-team/junit4/wiki/Download-and-I
 6. Add the @Test annotation to every separate test you write so JUnit will run it.
 7. Driver documentation on how Selenium client bindings will pick up the geckodriver binary executable.
 https://github.com/mozilla/geckodriver
-You can just add it liek this: System.setProperty("webdriver.gecko.driver", "/Users/yourfolder/geckodriver");
+You can just add it like this: System.setProperty("webdriver.gecko.driver", "/Users/yourfolder/geckodriver");
 8. The test method should end with "test", eg: public  static class FirstAutomationTest
 9. Instantiate driver object, in this case as FirefoxDriver:
 WebDriver driver = new FirefoxDriver();
